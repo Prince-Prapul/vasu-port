@@ -1,0 +1,230 @@
+*{
+    font-family: 'VT323', monospace;
+    color: green;
+}
+body{
+    background-color: black;
+}
+
+.intro{
+    font-size: 2.5vh;
+}
+
+.profile{
+    height: 75%;
+    border-radius: 50%;
+    width: auto;
+    border: 3px solid green;
+}
+
+.asciitext{
+    display: block;
+    opacity: 0;
+    font-size: 1vw;
+    white-space: pre-wrap;
+    margin-left: 30vw;
+    animation: ani1 1s forwards;
+    animation-delay: 1.5s;
+}
+
+.asciitextmob{
+    display: none;
+}
+
+.bio{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backbutton{
+    margin-bottom: 5vh;
+    padding:5px 20px 5px 20px;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+}
+
+.tab{
+    margin-left: 6%;
+}
+.dtab{
+    margin-left: 10%;
+}
+
+div{
+    margin-top: 0;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vh;
+}
+
+.row{
+    width: 25%;
+    height: 100%;
+}
+.title1{
+    font-size: 300%;
+}
+.title2{
+    font-size: 300%;
+}
+
+.box{
+    margin-bottom: 10vh;
+}
+
+.row1 {   
+    animation: ani1 1s forwards;
+    -webkit-animation: ani1 1s forwards;
+    opacity:0;
+    animation-delay: 2s;
+}
+
+.row2 {   
+    animation: ani1 1s forwards;
+    -webkit-animation: ani1 1s forwards;
+    opacity:0;
+    animation-delay: 2.5s;
+}
+
+.row3 {   
+    animation: ani1 1s forwards;
+    -webkit-animation: ani1 1s forwards;
+    opacity:0;
+    animation-delay: 3s;
+}
+
+@keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+
+    25%{
+
+        opacity: 0.25;
+    }
+
+    50%{
+
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}
+
+@-webkit-keyframes ani2 {
+    0% {
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) and (orientation:portrait) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .row{
+        width: 80%;
+    }
+    .asciitext{
+        display: none;
+    }
+    .asciitextmob{
+        display: block;
+        opacity: 0;
+        text-align: center;
+        font-size: 10vw;
+        animation: ani1 1s forwards;
+        animation-delay: 1.5s;
+    }
+    h3{
+        font-size: 4vh;
+    }
+    h4{
+        font-size: 3.5vh;
+    }
+    .content{
+        font-size: 3vh;
+    }
+
+    .tab{
+        margin-left: 0;
+    }
+
+    .dtab{
+        margin-left: 0;
+    }
+  }
+

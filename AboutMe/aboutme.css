@@ -1,0 +1,186 @@
+body{
+    background-image: url(AboutMeBackground.jpg);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.pcbox{
+    display: block;
+}
+
+.mobbox{
+    display: none;
+}
+
+.blurbox{
+    background-position: center -70px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+    width: auto;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.contitem{
+    display: flex;
+    position: relative;
+    margin-top: 2vh;
+}
+
+.content{
+    text-align: left;
+    width: 45vw;
+    font-family: 'Cairo', sans-serif;
+    margin: 1vh;
+}
+
+.writing{
+    width: 60vw;
+    text-align: left;
+}
+
+.icon{
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    width: 30vw;
+}
+
+img{
+    width: 10vw;
+    height: 10vh;
+}
+
+
+.conthead{
+    text-align: left;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 5vh;
+    margin: 0vh;
+}
+
+.contsubhead{
+    text-align: left;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 4vh;
+    margin: 0vh;
+}
+
+p{
+    font-size: 3vh;
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+    margin: 0vh;
+}
+
+.subheading{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    color: #ffffff;
+    font-size: 3.75vh;
+    z-index: 5;
+}
+
+.heading{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    color: #ffffff;
+    font-size: 7.5vh;
+    z-index: 5;
+}
+
+#quoteblock{
+    text-align: center;
+    font-size: 4.5vh;
+}
+
+.headbox{
+    display: flex;
+}
+
+.headleft{
+    width: 60vw;
+}
+
+.headright{
+    text-align: left;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 40vw;
+}
+
+.biggif{
+    top: 15%;
+    border: 5px solid white;
+    border-radius: 20px;
+    position: absolute;
+    right: 10%;
+    width: 25vw;
+    height: auto;
+}
+
+.titlebox{
+    background-position: center -70px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+    width: auto;
+    padding: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+@media only screen and (max-width: 768px) and (orientation:portrait){
+
+    /* for mobile */
+
+    body{
+        background-image: url(mobbg2.jpg);
+        background-repeat: repeat-y;
+        background-attachment: scroll !important;
+    }
+
+    .pcbox{
+        display: none;
+    }
+
+    .mobbox{
+        display: block;
+    }
+
+    .heading{
+        margin-left: 1vw;
+        color: #ffffff;
+        font-size: 7.5vh;
+        z-index: 5;
+    }
+
+    .titlebox{
+        margin-top: -5vh;
+    }
+
+    .conthead{
+        text-align: center;
+    }
+
+    .contsubhead{
+        text-align: center;
+    }
+
+    .writing{
+        width:100%;
+        text-align: center;
+    }
+    
+    img{
+        width: 20vw;
+        height: 20vh;
+    }
+}  

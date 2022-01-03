@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+#container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.mobbox{
+    display: none;
+}
+
+.longbox{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.heading{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    color: #ffffff;
+    font-size: 7.5vh;
+    font-family: 'Commissioner', sans-serif;
+    z-index: 5;
+}
+.subheading{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    color: #B28228;
+    font-size: 3.75vh;
+    font-family: 'Commissioner', sans-serif;
+    z-index: 5;
+}
+
+.navig{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    font-family: 'Cinzel', serif;
+}
+
+.myButton {
+	background-color: #9b7124;
+	border-radius: 2px;
+	border:3px solid #7a540d;
+	display:inline-block;
+	cursor:pointer;
+    color:#000000;
+    font-family: 'Cinzel', serif;
+	font-size:2.25vh;
+    padding:1vh 1vh;
+    width: 20vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    outline: none;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #8a6012;
+}
+.myButton:hover {
+    background-color:#946a1b;
+}
+.myButton:active {
+	position:relative;
+	top:2px;
+}
+
+.topbar{
+    margin-top: 1vh;
+    height: 4.3vh;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3vh;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    background-color: #7a540d;
+}
+
+.colorflow1 {   
+    animation: colorchange1 20s infinite;
+    -webkit-animation: colorchange1 20s infinite;
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes colorchange1 {
+    0% {
+      color: #7a540d;
+    }
+    
+    16% {
+      color: white;
+    }
+
+    33% {
+        color: white;
+    }
+    
+    50% {
+        color: white;
+    }
+
+    66% {
+        color: #7a540d;
+    }
+
+    83% {
+        color: #7a540d;
+    }
+
+    100% {
+      color: #7a540d;
+    }
+}
+
+  @-webkit-keyframes colorchange1 {
+    0% {
+      color: #7a540d;
+    }
+    
+    16% {
+      color: white;
+    }
+
+    33% {
+        color: white;
+    }
+    
+    50% {
+        color: white;
+    }
+
+    66% {
+        color: #7a540d;
+    }
+
+    83% {
+        color: #7a540d;
+    }
+
+    100% {
+      color: #7a540d;
+    }
+}
+
+.colorflow2 {   
+    animation: colorchange2 20s infinite;
+    -webkit-animation: colorchange2 20s infinite;
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes colorchange2 {
+    0% {
+        color: #7a540d;
+      }
+      
+      16% {
+        color: #7a540d;
+      }
+  
+      33% {
+          color: white;
+      }
+      
+      50% {
+          color: white;
+      }
+  
+      66% {
+          color: white;
+      }
+  
+      83% {
+          color: #7a540d;
+      }
+  
+      100% {
+        color: #7a540d;
+      }
+}
+
+  @-webkit-keyframes colorchange2 {
+    0% {
+        color: #7a540d;
+      }
+      
+      16% {
+        color: #7a540d;
+      }
+  
+      33% {
+          color: white;
+      }
+      
+      50% {
+          color: white;
+      }
+  
+      66% {
+          color: white;
+      }
+  
+      83% {
+          color: #7a540d;
+      }
+  
+      100% {
+        color: #7a540d;
+      }
+}
+
+.colorflow3 {   
+    animation: colorchange3 20s infinite;
+    -webkit-animation: colorchange3 20s infinite;
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes colorchange3 {
+    0% {
+        color: #7a540d;
+      }
+      
+      16% {
+        color: #7a540d;
+      }
+  
+      33% {
+          color: #7a540d;
+      }
+      
+      50% {
+          color: white;
+      }
+  
+      66% {
+          color: white;
+      }
+  
+      83% {
+          color: white;
+      }
+  
+      100% {
+        color: #7a540d;
+      }
+}
+
+@-webkit-keyframes colorchange3 {
+    0% {
+        color: #7a540d;
+      }
+      
+      16% {
+        color: #7a540d;
+      }
+  
+      33% {
+          color: #7a540d;
+      }
+      
+      50% {
+          color: white;
+      }
+  
+      66% {
+          color: white;
+      }
+  
+      83% {
+          color: white;
+      }
+  
+      100% {
+        color: #7a540d;
+      }
+}
+
+.blurbox{
+    background-position: center -70px;
+    backdrop-filter: blur(5px);
+    z-index: 0;
+    width: auto;
+    padding: 2vh;
+}
+
+@media only screen and (max-width: 768px) and (orientation:portrait){
+    /* for mobile */
+    .pcbox{
+        display: none;
+    }
+    .mobbox{
+        display: block;
+    }
+    .topbar{
+        margin-top: 1vh;
+        height: 4.3vh;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3vh;
+        letter-spacing: 2px;
+        font-family: 'Cinzel', serif;
+        background-color: #7a540d;
+    }
+    .heading{
+        margin-top: 2vh;
+        margin-left: 1vw;
+        color: #ffffff;
+        font-size: 6vh;
+        font-family: 'Commissioner', sans-serif;
+    }
+    .subheading{
+        margin-top: 1vh;
+        margin-left: 1vw;
+        color: #B28228;
+        font-size: 3vh;
+        font-family: 'Commissioner', sans-serif;
+    }
+}  
+
+@media only screen and (min-aspect-ratio: 5/2){
+    /* for long screens */
+
+    body{
+        overflow: scroll;
+    }
+    .pcbox{
+        display: none;
+    }
+    .longbox{
+        display: block;
+    }
+    .topbar{
+        margin-top: 1vh;
+        height: 4.3vh;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3vh;
+        letter-spacing: 2px;
+        font-family: 'Cinzel', serif;
+        background-color: #7a540d;
+    }
+    .heading{
+        margin-top: 2vh;
+        margin-left: 1vw;
+        color: #ffffff;
+        font-size: 6vh;
+        font-family: 'Commissioner', sans-serif;
+    }
+    .subheading{
+        margin-top: 1vh;
+        margin-left: 1vw;
+        color: #B28228;
+        font-size: 3vh;
+        font-family: 'Commissioner', sans-serif;
+    }
+    .myButton {
+        background-color: #9b7124;
+        border-radius: 2px;
+        border:3px solid #7a540d;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family: 'Cinzel', serif;
+        font-size:3vh;
+        padding:1vh 1vh;
+        height: 15vh;
+        width: 30vh;
+        margin-left: 1vw;
+        margin-top: 2vh;
+        outline: none;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #8a6012;
+    }
+}  
